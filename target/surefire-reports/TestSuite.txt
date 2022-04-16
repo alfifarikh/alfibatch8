@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 5.232 sec <<< FAILURE! - in TestSuite
+login(qaautomation.march2022.APITestAfterRefactor)  Time elapsed: 4.951 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Header value cannot be null
+

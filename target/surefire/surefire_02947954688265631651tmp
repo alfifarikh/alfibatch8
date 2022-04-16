@@ -1,0 +1,7 @@
+#surefire_0
+#Sat Apr 16 11:17:54 ICT 2022
+surefire.suiteXmlFiles=api.xml
+user.dir=E\:\\Belajar\\march2022
+env=stage
+localRepository=C\:\\Users\\Keluarga Slamet\\.m2\\repository
+basedir=E\:\\Belajar\\march2022

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="qaautomation.march2022.APITestAfterRefactor">
+        <methods>
+          <include name="login"/>
+          <include name="testDashboardAPI"/>
+          <include name="testDashboardWithoutParam"/>
+          <include name="testDashboardWithoutToken"/>
+        </methods>
+      </class> <!-- qaautomation.march2022.APITestAfterRefactor -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
