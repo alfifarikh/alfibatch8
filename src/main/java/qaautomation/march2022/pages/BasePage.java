@@ -28,5 +28,10 @@ public class BasePage {
 		explicitWait.get().until(ExpectedConditions.elementToBeClickable(locator));
 		return driver.get().findElement(locator).getText();
 	}
+	
+	public void switchIframe(By locator) {
+		explicitWait.get().until(ExpectedConditions.elementToBeClickable(locator));
+		driver.get().switchTo().frame("ifmail");
+	}
 
 }

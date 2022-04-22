@@ -31,7 +31,7 @@ public class APITestAfterRefactor extends BaseAPITest {
 		responseDashboard.then().assertThat()
 				.body(matchesJsonSchema(DataUtility.getDataFromExcel("Schemas", "DashboardNoTokenSchema")));
 
-	}
+		}
 	
 	@Test
 	public void testDashboardWithoutParam() {

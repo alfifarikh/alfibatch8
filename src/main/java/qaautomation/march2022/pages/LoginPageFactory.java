@@ -2,39 +2,55 @@ package qaautomation.march2022.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageFactory extends BasePage {
-	By username = By.xpath("//input[@id='username']");
-	By password = By.id("password");
-	By loginBtn = By.xpath("//button[@type='submit']");
-	By lgnName = By.xpath("//h2[normalize-space()='Login Page']");
-	By failLoginWarn = By.xpath("//div[@id='flash']");
-
+	@FindBy(xpath = "//input[@id='username']")
+	private WebElement username;
+	
+	@FindBy(id = "password")
+	private WebElement password;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement loginBtn;
+	
+	@FindBy(xpath = "//h2[normalize-space()='Login Page']")
+	private WebElement loginBanner;
+	
+	@FindBy(xpath = "//div[@id='flash']")
+	private WebElement failLoginWarn;
+	
 	public LoginPageFactory(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
+		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver.get(), this);
 	}
-
+	
 	public void inputUsername(String user) {
-		setText(username, user);
+		username.sendKeys(user);
 	}
 
 	public void inputPassword(String pass) {
-		setText(password, pass);
+		password.sendKeys(pass);
 	}
 
 	public void clickLoginButton() {
-		clickAndWait(loginBtn);
+		loginBtn.click();
 	}
 	
-	public String loginBanner () {
-		return getText(lgnName);
+	public String getBannerText() {
+		return loginBanner.getText();
 	
 	}
 	
 	public String getFailedLoginWarning () {
-		return getText(failLoginWarn);
+		return failLoginWarn.getText();
 	
 	}
+
+	
 
 }

@@ -13,20 +13,4 @@ public class BasePageFactory {
 		this.driver = driver;
 		this.explicitWait = explicitWait;
 	}
-
-	public void clickAndWait(By locator) {
-		explicitWait.get().until(ExpectedConditions.elementToBeClickable(locator));
-		driver.get().findElement(locator).click();
-	}
-
-	public void setText(By locator, String text) {
-		explicitWait.get().until(ExpectedConditions.elementToBeClickable(locator));
-		driver.get().findElement(locator).sendKeys(text);
-	}
-
-	public String getText(By locator) {
-		explicitWait.get().until(ExpectedConditions.elementToBeClickable(locator));
-		return driver.get().findElement(locator).getText();
-	}
-
 }

@@ -1,0 +1,1 @@
+{"uuid":"8a1e9d0c-1335-43d6-818d-321fb9f0fdc4","name":"qaautomation.march2022.BaseWebTestHeadless.setup","description":"","start":1650089080519,"stop":1650089085648,"children":["058310d2-30fc-47a8-a9f8-61aa7b017515"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","start":1650089080519,"stop":1650089085648}]}

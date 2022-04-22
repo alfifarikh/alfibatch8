@@ -10,6 +10,11 @@ public class LoginPage extends BasePage {
 	By loginBtn = By.xpath("//button[@type='submit']");
 	By lgnName = By.xpath("//h2[normalize-space()='Login Page']");
 	By failLoginWarn = By.xpath("//div[@id='flash']");
+	
+	By emailName = By.xpath("//input[@id='login']");
+	By nextBtn = By.xpath("//i[contains(text(),'')]");
+	By switchIframe = By.id("ifmail");
+	By descEmail = By.xpath("//tbody//tr[@valign='top']//div//div//div//div[1]//div[1]//div[1]//div[1]//div[1]//p[1]//strong[1]//span[1]");
 
 	public LoginPage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
@@ -35,6 +40,23 @@ public class LoginPage extends BasePage {
 	public String getFailedLoginWarning () {
 		return getText(failLoginWarn);
 	
+	}
+	
+	public void inputEmailName(String emailUser) {
+		setText(emailName, emailUser);
+	}
+	
+	public void clickNextButton() {
+		clickAndWait(nextBtn);
+	}
+	
+	public String getDescriptionEmail() {
+		return getText(descEmail);
+	
+	}
+	
+	public void switchingIframe() {
+		switchIframe(switchIframe);
 	}
 
 }

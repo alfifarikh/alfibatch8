@@ -5,6 +5,8 @@
     <classes>
       <class name="qaautomation.march2022.AppTestAfterRefactor"/>
       <class name="qaautomation.march2022.AppTest"/>
+      <class name="qaautomation.march2022.AppTestAfterPom"/>
+      <class name="qaautomation.march2022.AppTestAfterPageFactory"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
