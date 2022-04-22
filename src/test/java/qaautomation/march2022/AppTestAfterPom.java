@@ -15,7 +15,7 @@ public class AppTestAfterPom extends BaseWebTest{
 	// karena semua extends dari BaseWebTest maka semua driver mesti menggunakan
 	// driver.get()
 	@Test
-	public void test() {
+	public void loginToWebAndSuccess() {
 		String username = "tomsmith";
 		String password = "SuperSecretPassword!";
 
@@ -30,7 +30,7 @@ public class AppTestAfterPom extends BaseWebTest{
 	}
 
 	@Test
-	public void test2() {
+	public void loginToWebNotClickingLoginButton() {
 		String username = "tomsmith";
 		String password = "SuperSecretPassword!";
 		
@@ -43,7 +43,7 @@ public class AppTestAfterPom extends BaseWebTest{
 	}
 
 	@Test
-	public void test3() {
+	public void loginInvalidUsername() {
 		String username = "tomsmithmabro";
 		String password = "SuperSecretPassword!";
 		

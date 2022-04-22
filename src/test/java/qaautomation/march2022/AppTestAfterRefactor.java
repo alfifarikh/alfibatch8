@@ -14,7 +14,6 @@ import qaautomation.march2022.pages.ProfilePage;
 
 public class AppTestAfterRefactor extends BaseWebTest {
 
-	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	
 	@Test
 	public void test() {

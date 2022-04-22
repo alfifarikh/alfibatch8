@@ -14,7 +14,7 @@ public class BaseWebTest {
 	
 	// ini adalah command memanggil driver multi thread
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	// webdriver untuk waitt juga menggunakan multithread
+	// webdriver untuk wait juga menggunakan multithread
 	ThreadLocal<WebDriverWait> explicitWait = new ThreadLocal<WebDriverWait>();
 		
 	
