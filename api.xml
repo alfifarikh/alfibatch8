@@ -4,6 +4,7 @@
   <test thread-count="1" name="Test" parallel="methods">
     <classes>
       <class name="qaautomation.march2022.APITestAfterRefactor"/>
+      <class name="qaautomation.march2022.APITest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
