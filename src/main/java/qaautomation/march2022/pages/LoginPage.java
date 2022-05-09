@@ -14,7 +14,7 @@ public class LoginPage extends BasePage {
 	By emailName = By.xpath("//input[@id='login']");
 	By nextBtn = By.xpath("//i[contains(text(),'')]");
 	By switchIframe = By.id("ifmail");
-	By descEmail = By.xpath("//tbody//tr[@valign='top']//div//div//div//div[1]//div[1]//div[1]//div[1]//div[1]//p[1]//strong[1]//span[1]");
+	By descEmail = By.xpath("//div[@id='mail']");
 
 	public LoginPage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
